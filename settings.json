@@ -18,6 +18,7 @@
     "light": "Tokyo Night",
     "dark": "One Dark"
   },
+  "autosave": "on_window_change",
   "tab_bar": {
     "show": true
   },
@@ -45,6 +46,11 @@
       "language_servers": ["pyright", "ruff"]
     }
   },
+  "terminal": {
+    "shell": {
+      "program": "fish"
+    }
+  },
   // Turn off telemetry
   "telemetry": {
     "diagnostics": false,
@@ -53,7 +59,14 @@
   // Disable cursor blink
   "cursor_blink": false,
   // Hide the scroll bar
-  "scrollbar": { "show": "never" },
+  "scrollbar": {
+    "show": "auto",
+    "cursors": true,
+    "git_diff": true,
+    "search_results": true,
+    "selected_symbol": true,
+    "diagnostics": true
+  },
   // Prevent the buffer from scrolling beyond the last line
   "scroll_beyond_last_line": "off",
   // Allow the cursor to reach the edges of the screen
